@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sujal's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 200vh;
+        z-index: -10;
+      }
+      .content {
+        position: relative;
+        z-index: 10;
+      }
+      .aboutme{
+        font-size: clamp(1rem, 3vw, 1.2rem);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900">
+    <!-- Canvas for background animation -->
+    <canvas id="canvas"></canvas>
+
+
+    <!-- navigation bar-->
+    <nav class="content">
+      <div class="navbar-brand">
+        <a href="#" class="logo">Sujal's Portfolio</a>
+      </div>
+      <div class="navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#contact-me">Connect</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="content flex h-screen items-center justify-center">
+      <div class="flex w-[90%] flex-col gap-8 md:grid md:w-[80%] md:grid-cols-2">
+        <!-- Text content - Full width on mobile, left column on larger screens -->
+        <div class="flex flex-col justify-center">
+          <h1 class="mb-4 text-center text-5xl text-pink-900 transition-all duration-300 hover:scale-125 hover:text-pink-700 md:text-left md:text-5xl ">👋Hi! I'm Sujal 🫰</h1>
+          <h2 class="text-center text-2xl text-pink-500 transition-all duration-500 hover:scale-125 hover:text-pink-50 md:text-left md:text-2xl">A Full Stack Developer & Team Lead</h2>
+        </div>
+
+        <!-- Image - Full width on mobile, right column on larger screens -->
+        <div class="mx-auto max-w-sm p-4">
+          <img src="https://picsum.photos/400/300" alt="Random Image" class="h-auto w-full rounded-lg border border-gray-300 shadow-md" />
+        </div>
+      </div>
+    </main>
+    <section id="about-me" class="mx-[10%] my-[-20%]">
+      <span class="text-left ">
+        <h2  class="text-center text-3xl font-extrabold drop-shadow-pink-600 ">About Me</h2>
+        <br>
+        <p class="aboutme font-semibold">👋 Hey there! I'm <span style="color: oklch(65.6% 0.241 354.308)">Sujal</span> — a passionate <span style="color: oklch(65.6% 0.241 354.308)">Full Stack Developer</span>, a curious <span style="color: oklch(65.6% 0.241 354.308)">Game Developer-in-training</span>, and a first-year <strong>B.Tech</strong> student at <strong>SOA, ITER</strong>, Bhubaneswar, Odisha, India.</p>
+        <p class="aboutme font-semibold">💻 I build <strong>dynamic web apps</strong>, craft <strong>powerful backend systems</strong>, and I'm currently exploring the exciting world of <strong>game development</strong> with <span style="color: oklch(65.6% 0.241 354.308)">Unity</span> — because why stop at websites when you can create entire worlds? 🌍</p>
+        <p class="aboutme font-semibold">🚀 With a strong foundation in <strong>Java</strong>, <strong>C++</strong>, <strong>C#</strong>, and <strong>Web Development</strong>, I am always pushing my skills forward — chasing innovation, creativity, and the thrill of building real-world solutions.</p>
+        <p class="aboutme font-semibold">
+          🏆 Currently, I'm the
+          <strong>Team Captain of <a href="https://schr0dy-coder.github.io/TechRediva/" target="_blank" style="color:oklch(65.6% 0.241 354.308)">TechRediva</a></strong>
+          — leading a passionate team of tech enthusiasts!
+        </p>
+        <p class="aboutme font-semibold">
+          If you're into <span style="color: oklch(65.6% 0.241 354.308)">technology</span>, <span style="color: oklch(65.6% 0.241 354.308)">games</span>, or just love creating cool things —<br />
+          <strong>let's connect and build something amazing together!</strong>
+          <a href="#contact-me" smooth><button href="#contact-me" class="getintouch">Get in Touch</button></a>
+        </p>
+        <p class="aboutme font-semibold">
+          <em>Driven by curiosity. Focused on impact. Always leveling up. 🎯</em>
+        </p>
+      </span>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
